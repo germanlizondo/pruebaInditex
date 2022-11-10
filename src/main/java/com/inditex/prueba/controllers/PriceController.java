@@ -27,7 +27,7 @@ public class PriceController {
       @RequestParam(value = "productId") final Long productId,
       @RequestParam(value = "brandId") final Long brandId) {
     log.info(
-        "Endpint /get has been called with query params -> date: [{}], productId: [{}], branchId: [{}]",
+        "Endpoint /get has been called with query params -> date: [{}], productId: [{}], branchId: [{}]",
         dateApplied,
         productId,
         brandId);

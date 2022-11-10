@@ -17,7 +17,7 @@ import org.springframework.web.context.WebApplicationContext;
 @SpringBootTest
 class PruebaInditexApplicationTests {
 
-  public static final String URI = "/price/get";
+  public static final String URI = "/price";
 
   public static final String DATE_PARAM = "dateApplied";
   public static final String PRODUCT_PARAM = "productId";

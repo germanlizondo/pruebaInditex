@@ -16,18 +16,18 @@ import java.util.Objects;
 
 @Slf4j
 @RestController
-@RequestMapping("price")
+@RequestMapping("/price")
 public class PriceController {
 
   @Autowired private PriceService priceService;
 
-  @GetMapping(value = "/get", produces = MediaType.APPLICATION_JSON_VALUE)
+  @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<PriceDto> getPrice(
       @RequestParam(value = "dateApplied") final Date dateApplied,
       @RequestParam(value = "productId") final Long productId,
       @RequestParam(value = "brandId") final Long brandId) {
     log.info(
-        "Endpoint /get has been called with query params -> date: [{}], productId: [{}], branchId: [{}]",
+        "Endpoint /price has been called with query params -> date: [{}], productId: [{}], branchId: [{}]",
         dateApplied,
         productId,
         brandId);
